@@ -99,3 +99,37 @@ img {
      justify-items: center;
      border-left: none; 
 }
+.header_nav_log{
+    width: 20px;
+    height: 20px;
+}
+.header_link{
+    width: 49.16px;
+    margin-left: 4px;
+    margin-right: 21.83px;
+    color: #212121;
+    font-size: 14px;
+    font-weight: 500;
+    height: 20px;
+}
+.header_link_log{
+    width: 41.16px;
+    white-space: nowrap;
+    margin-right: 21.83px;
+    color: #212121;
+    font-size: 14px;
+    font-weight: 500;
+    height: 20px;
+
+}
+.header_nav_button{
+    width: 83.12px;
+    height: 36px;
+    margin-right: 49.97px;
+    background-color: #00798A;
+    color: #FFFFFF;
+    white-space: nowrap;
+    border: none;
+    border-radius: 8px;
+
+}
