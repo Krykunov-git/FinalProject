@@ -50,6 +50,7 @@ img {
 .header_search{
     display: flex;
      align-items: center;
+     margin-top: 11px;
 }
 .header_nav{
     display: flex;
@@ -59,14 +60,30 @@ img {
 }
 .header_logo{
     margin-left: 24px;
-    margin-top: 15px;
+    
     margin-right: 40px;
     display: block;
 }
 .search-input {
+    width: 300px;
+    height: 42px;
+    font-size: 16px;
   padding-left: 36px; 
   background-image: url('./images/Vector.svg'); 
   background-repeat: no-repeat;
   background-position: 8px center;
-  background-size: 20px 20px;
+  border: 1px solid#D9D9D9;
+ border-radius: 8px 0 0 8px;
+
+}
+.header_input{
+    width: 254px;
+    height: 42px;
+    font-size: 16px;
+    border: 1px solid#D9D9D9;
+    padding-left: 17px;
+}
+.header_input::placeholder {
+  color: #000000; 
+  
 }
