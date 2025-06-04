@@ -88,3 +88,11 @@ img {
   color: #000000; 
   
 }
+.header_button{
+    width: 42px;
+    height: 42px;
+     border-radius: 0 8px 8px 0;
+     background-color: #F65858;
+     border: 1px solid#D9D9D9;
+     justify-items: center;
+}
