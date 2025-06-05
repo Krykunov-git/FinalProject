@@ -183,6 +183,7 @@ padding-right: 73px;
     margin-top: 126.5px;
     margin-bottom: 28px;
     align-items: center;
+   
    }  
    .video_stat{
    display: flex;
@@ -242,7 +243,7 @@ padding-right: 73px;
   font-weight: 600;
   line-height: 24px;
   color: #212121;
-  margin-bottom: 8px;
+   margin-top: 12px;
 
 }
 .video_card_paragraf{
@@ -251,6 +252,7 @@ padding-right: 73px;
   font-weight: 500;
   line-height: 20px;
   color: #707070;
+
 
 
 }
