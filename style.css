@@ -162,3 +162,13 @@ padding-right: 73px;
   margin-bottom: 24px;
     
 }
+.main_button{
+  display: flex;
+    justify-content: center; 
+  align-items: center;
+  width: 125.2px;
+  height: 40px;
+  border-radius: 8px;
+  background-color:#00798A ;
+  color: #FFFFFF;
+}
