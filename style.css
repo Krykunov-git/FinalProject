@@ -232,6 +232,7 @@ padding-right: 73px;
 
 .video_card{
   width: 272px;
+  height: 399px;
 }
 
 .video_card_title{
@@ -281,4 +282,7 @@ padding-right: 73px;
  display: flex;
  align-items: center;
  margin-bottom: 12px;
+}
+.video_bottom{
+margin-bottom: 35px;
 }
