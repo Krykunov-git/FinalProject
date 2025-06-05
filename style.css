@@ -177,6 +177,18 @@ padding-right: 73px;
 
                        /* VIDEO */
 
-                       .dd{
-                        display: flex;
-                       }
+ .dd{
+ display: flex;
+}
+.video{
+  display: flex;
+}
+.card-wrapper{
+  display: flex;
+
+  gap: 36px; 
+}
+
+.video_card{
+  width: 272px;
+}
