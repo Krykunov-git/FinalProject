@@ -176,3 +176,7 @@ padding-right: 73px;
 
 
                        /* VIDEO */
+
+                       .dd{
+                        display: flex;
+                       }
