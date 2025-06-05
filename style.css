@@ -29,7 +29,7 @@ img {
 .header,
 .footer {
   width: 100%;
-  flex-wrap: nowrap;
+  
   display: flex;
   
 }
@@ -47,7 +47,7 @@ img {
 .header{
     justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap;
+   
 }
 .header_search{
     display: flex;
@@ -56,7 +56,7 @@ img {
 }
 .header_nav{
     display: flex;
-    flex-wrap: nowrap;
+    
     align-items: center;
     margin-top: 14px;
     
@@ -179,9 +179,26 @@ padding-right: 73px;
 
    .video_title{
     display: flex;
+    justify-content: space-between;
+    margin-top: 126.5px;
+    margin-bottom: 28px;
     
-  flex-wrap: nowrap;
-   }                    
+    
+   
+  
+   }  
+   .video_stat{
+   display: flex;
+   align-items: center;
+    margin-right: 7.8px;
+    width: 160.78px;
+    font-size: 28px;
+    font-weight: 600;
+   }
+   .video_nav{
+    display: flex;
+    
+   }                  
 
  .video_button{
   display: flex;
@@ -202,6 +219,11 @@ padding-right: 73px;
  .button_text{
   margin-right: 15px;
   
+ }
+ .video_link{
+  font-size: 16px;
+  font-weight: 500;
+  color: #00798A;
  }
 
 .card-wrapper{
