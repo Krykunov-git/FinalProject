@@ -286,3 +286,25 @@ padding-right: 73px;
 .video_bottom{
 margin-bottom: 35px;
 }
+
+
+                           /* Online events */
+
+
+.events_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom:24px ;
+   } 
+
+
+   .event_stat{
+   display: flex;
+   align-items: center;
+    margin-right: 7.8px;
+    width: 333.5px;
+    font-size: 28px;
+    font-weight: 600;
+   }
