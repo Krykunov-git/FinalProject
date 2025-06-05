@@ -26,6 +26,9 @@ img {
   display: block;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
 .header,
 .footer {
   width: 100%;
@@ -316,6 +319,7 @@ margin-bottom: 35px;
   background-color: #97CAD114;
   display: flex;
   align-items: center;
+  border-radius: 8px;
   
 }
 .join_menu{
@@ -327,12 +331,16 @@ margin-bottom: 35px;
   font-weight: 600;
   font-size: 28px;
   line-height: 36px;
+  margin-bottom:16px ;
 
 }
 .join_paragraf{
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  margin-bottom:16px ;
+  padding-right: 75px;
+  
 
 }
 .join_button{
@@ -343,4 +351,8 @@ margin-bottom: 35px;
   border: none;
   border-radius: 8px;
 
+}
+.join_img{
+  margin-right: 56px;
+  margin-bottom: 20px;
 }
