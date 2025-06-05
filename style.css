@@ -250,7 +250,7 @@ padding-right: 73px;
   height: 40px;
   font-size: 14px;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 20px; 
   color: #707070;
 
 
@@ -310,3 +310,37 @@ margin-bottom: 35px;
     font-size: 28px;
     font-weight: 600;
    }
+
+                        /* Join Meetup */
+.join_container{
+  background-color: #97CAD114;
+  display: flex;
+  align-items: center;
+  
+}
+.join_menu{
+ width: 739px;
+ margin-left: 56px;
+}
+
+.join_title{
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+
+}
+.join_paragraf{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+}
+.join_button{
+  width: 192px;
+  height: 40px;
+  background-color: #E32359;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+
+}
