@@ -177,18 +177,42 @@ padding-right: 73px;
 
                        /* VIDEO */
 
- .dd{
- display: flex;
-}
-.video{
+   .video_title{
+    display: flex;
+    
+  flex-wrap: nowrap;
+   }                    
+
+ .video_button{
   display: flex;
-}
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 239.41px;
+  height: 44px;
+  font-weight: 500;
+  background-color: #97CAD11F;
+  color: #00798A;
+  border: none;
+  border-radius:8px;
+  font-size: 20px;
+  
+
+ }
+ .button_text{
+  margin-right: 15px;
+  
+ }
+
 .card-wrapper{
   display: flex;
-
   gap: 36px; 
 }
 
 .video_card{
   width: 272px;
+}
+
+.dd{
+ display: flex;
 }
