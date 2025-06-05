@@ -182,10 +182,7 @@ padding-right: 73px;
     justify-content: space-between;
     margin-top: 126.5px;
     margin-bottom: 28px;
-    
-    
-   
-  
+    align-items: center;
    }  
    .video_stat{
    display: flex;
@@ -221,9 +218,11 @@ padding-right: 73px;
   
  }
  .video_link{
+ 
   font-size: 16px;
   font-weight: 500;
   color: #00798A;
+ 
  }
 
 .card-wrapper{
