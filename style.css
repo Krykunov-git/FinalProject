@@ -390,6 +390,26 @@ text-align: center;
 
   }
                      /* CITY */
+.ciry_title{
+  margin-top: 64px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+  color: #212121;
+
+}
+.city_paragraf{
+   font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color:#707070;
+  margin-bottom: 28px;
+
+}
+
+
+
   .city_card{
     display: flex;
     flex-wrap: wrap;
@@ -397,4 +417,15 @@ text-align: center;
   }
   .city_box{
    text-align: center;
+  }
+  .city_img{
+    margin-bottom: 24px;
+
+  }
+  .city_name{
+      font-weight: 600;
+  font-size:20px;
+  line-height: 28px;
+  color:#212121;
+
   }
