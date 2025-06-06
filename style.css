@@ -356,3 +356,36 @@ margin-bottom: 35px;
   margin-right: 56px;
   margin-bottom: 20px;
 }
+
+
+                   /* Сategories */
+
+  .categories_title{
+    font-weight: 600;
+    font-size: 28px;
+    line-height:36px;
+    margin-top: 65px;
+
+  }      
+  .categories_box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }           
+
+  .categories_card{
+    display: flex;
+
+text-align: center;
+  
+  
+
+  
+    flex-direction: column;
+    align-items: center;
+    width: 135px;
+  padding: 22px 28px 16px 28px;
+    background-color: #97CAD114;
+    border-radius: 8px;
+
+  }
