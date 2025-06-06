@@ -390,3 +390,11 @@ text-align: center;
 
   }
                      /* CITY */
+  .city_card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 41.7px;
+  }
+  .city_box{
+   text-align: center;
+  }
