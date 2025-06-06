@@ -408,8 +408,6 @@ text-align: center;
 
 }
 
-
-
   .city_card{
     display: flex;
     flex-wrap: wrap;
@@ -429,3 +427,6 @@ text-align: center;
   color:#212121;
 
   }
+
+
+                    /* WORKS */
