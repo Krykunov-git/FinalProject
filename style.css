@@ -430,3 +430,22 @@ text-align: center;
 
 
                     /* WORKS */
+
+.works_title{
+  margin-top: 64px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+  color: #212121;
+
+}
+.works_box{
+  display: flex;
+  background-color: #97CAD114;
+  max-width: 580px;
+  
+  
+}
+.works_card{
+  flex-direction: column;
+}
