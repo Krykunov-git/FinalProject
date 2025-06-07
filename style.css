@@ -596,3 +596,48 @@ color: #00798A;
 
 
                           /* FOOTER */
+
+
+.container_footer{
+   max-width: 1512px;
+  margin: 0 auto;
+  padding-left: 196.34px;
+  padding-right: 196.34px;
+  box-sizing: border-box;
+  background-color: #212121;
+}
+.footer_start{
+  display: flex;
+  border-bottom: 1px solid#707070;
+}
+.footer_title{
+    font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #F6F7F8;
+
+}
+
+.footer_wrapper{
+  display: flex;
+
+}
+.footer_cart{
+  
+  width: 373px;
+
+}
+
+.footer_cart_list{
+ color: #C5C4C4;
+
+}
+
+.footer_cart_list li {
+  margin-bottom: 7px; 
+}
+
+.footer_cart_title{
+  color: #F6F7F8;
+
+}
