@@ -455,10 +455,7 @@ text-align: center;
 .lolo{
   margin-left: 32px;
 }
-.works_card{
-  
-  
-}
+
 
 .works_img{
   margin-top: 32px;
@@ -490,3 +487,12 @@ text-align: center;
 
 color: #00798A;
 }
+
+                         /* Friendships */
+
+  .friendships_title{
+    margin-top: 64px;
+     font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+  }
