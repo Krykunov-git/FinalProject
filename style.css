@@ -315,43 +315,84 @@ margin-bottom: 35px;
    }
 
                         /* Join Meetup */
-.join_container{
+.join_container {
   background-color: #97CAD114;
   display: flex;
   align-items: center;
   border-radius: 8px;
-  
-}
-.join_menu{
- width: 739px;
- margin-left: 56px;
 }
 
-.join_title{
+.join_menu {
+  width: 739px;
+  margin-left: 56px;
+}
+
+.join_title {
   font-weight: 600;
   font-size: 28px;
   line-height: 36px;
-  margin-bottom:16px ;
-
+  margin-bottom: 16px;
 }
-.join_paragraf{
+
+.join_paragraf {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  margin-bottom:16px ;
+  margin-bottom: 16px;
   padding-right: 75px;
-  
-
 }
-.join_button{
+
+.join_button {
   width: 192px;
   height: 40px;
   background-color: #E32359;
   color: #FFFFFF;
   border: none;
   border-radius: 8px;
-
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
 }
+
+.join_button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-20deg);
+  z-index: 1;
+  animation: shine 2s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+.join_button:hover {
+  transform: scale(1.05);
+  background-color: #f03b6a; 
+}
+
+.join_button:hover::before {
+  filter: blur(10px); 
+}
+
 .join_img{
   margin-right: 56px;
   margin-bottom: 20px;
@@ -493,39 +534,65 @@ color: #00798A;
 
                          /* Friendships */
 
-  .friendships_title{
+  .friendships_titl{
     margin-top: 64px;
      font-weight: 600;
   font-size: 28px;
   line-height: 36px;
   }
 
-  .friendships_paragraf{
+  .friendships_paragra{
     margin-top: 16px;
       font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #707070;
   max-width: 893.4px;
+  margin-bottom: 28px;
   }
   .friendships_wrapper{
     display: flex;
+    gap: 32px;
 
   }
 
   .friendships_card{
 
+   
+
   }
   .friendships_img{
+    margin-bottom: 24px;
+    
 
   }
 
   .friendships_title{
+     font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  max-width: 292.4px;
+  margin-bottom: 12px;
 
   }
   .friendships_paragraf{
+    max-width: 365.5px;
+     font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #707070;
+  margin-bottom: 16px;
+
 
   }
   .friendships_link{
+     font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #00798A;
 
   }
+
+
+
+                          /* FOOTER */
