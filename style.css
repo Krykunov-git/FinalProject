@@ -211,6 +211,14 @@ padding-right: 73px;
     left: 125%;
   }
 }
+.main_button:hover {
+  transform: scale(1.05);
+  background-color: #f03b6a; 
+}
+
+.main_button:hover::before {
+  filter: blur(10px); 
+}
 
 .main_button:hover {
   transform: scale(1.07);
@@ -395,6 +403,7 @@ margin-bottom: 35px;
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  transition: transform 0.3s ease, background-color 0.3s ease;
   z-index: 0;
 }
 
@@ -413,20 +422,20 @@ margin-bottom: 35px;
   );
   transform: skewX(-20deg);
   z-index: 1;
-  animation: shine 2s ease-in-out infinite;
+  animation: shine 2.5s ease-in-out infinite;
   pointer-events: none;
 }
 
 @keyframes shine {
   0% {
-    left: -100%;
+    left: -75%;
   }
   100% {
-    left: 100%;
+    left: 125%;
   }
 }
 .join_button:hover {
-  transform: scale(1.05);
+  transform: scale(1.07);
   background-color: #f03b6a; 
 }
 
