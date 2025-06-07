@@ -435,17 +435,58 @@ text-align: center;
   margin-top: 64px;
   font-weight: 600;
   font-size: 28px;
-  line-height: 36px;
-  color: #212121;
+
 
 }
 .works_box{
   display: flex;
-  background-color: #97CAD114;
-  max-width: 580px;
   
   
 }
+.works_item{
+  width: 580px;
+  margin-top: 24px;
+  display: flex;
+  align-items: flex-start;
+  background-color: #97CAD114;
+  
+}
+
+.lolo{
+  margin-left: 32px;
+}
 .works_card{
-  flex-direction: column;
+  
+  
+}
+
+.works_img{
+  margin-top: 32px;
+  margin-left: 24px;
+  margin-right: 24px;
+  
+
+}
+.works_tit{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 16px;
+  margin-top: 32px;
+
+}
+.works_paragraf{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.works_link{
+    font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 24px;
+
+color: #00798A;
 }
