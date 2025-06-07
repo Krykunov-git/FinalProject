@@ -657,7 +657,18 @@ color: #00798A;
   line-height: 24px;
   margin-top: 24px;
 }
+.footer_nav_wrapper{
+  display: flex;
+  justify-content: space-between;
+  
+}
 .footer_nav_imj{
   display: flex;
   gap: 32px;
+}
+
+.footer_nav_app{
+  gap: 12px;
+  display: flex;
+  margin-left: auto;
 }
