@@ -635,9 +635,17 @@ color: #00798A;
 
 .footer_cart_list li {
   margin-bottom: 7px; 
+   font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .footer_cart_title{
   color: #F6F7F8;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 7px;
+  margin-top: 24px;
 
 }
