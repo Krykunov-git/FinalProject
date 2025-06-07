@@ -496,3 +496,12 @@ color: #00798A;
   font-size: 28px;
   line-height: 36px;
   }
+
+  .friendships_paragraf{
+    margin-top: 16px;
+      font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #707070;
+  max-width: 893.4px;
+  }
