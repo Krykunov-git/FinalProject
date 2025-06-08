@@ -784,9 +784,48 @@ margin-left: 45px;
   border: none;
   background-color: #F6F7F8;
   color: #212121;
-  border-radius: 5px;
+  border-radius: 40px;
   cursor: pointer;
+
+
+   
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+.filter-btn:hover {
+  transform: scale(1.05);
+  background-color: #eaeaea;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.svg-icon {
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.4s ease;
+  display: inline-block;
+}
+
+.filter-btn:hover .svg-icon {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.filter-btn img {
+  transition: transform 0.3s ease;
+  transform: rotate(0deg);
+}
+
+.filter-btn.active img {
+  transform: rotate(180deg);
+}
+
+
+
 .event-card {
 
   border-radius: 10px;
@@ -811,4 +850,11 @@ margin-left: 45px;
   line-height: 24px;
   color: #212121;
   
+}
+
+.arrow_bt{
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+
 }

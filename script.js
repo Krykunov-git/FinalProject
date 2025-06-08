@@ -148,3 +148,20 @@ function renderFilteredEvents() {
 }
 
 renderFilteredEvents();
+
+            // Оборот свг на кнопке// 
+
+document.querySelectorAll('.filter-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    const filter = button.dataset.filter;
+
+   
+    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+
+   
+    button.classList.toggle('active');
+
+  
+    
+  });
+});
