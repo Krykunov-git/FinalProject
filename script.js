@@ -1,8 +1,9 @@
  const eventsStore = [
       {
+        date: new Date(2024, 2, 23, 15),
         title: "INFJ Personality Type - Coffee Shop Meet & Greet",
         description: "Being an INFJ",
-        date: new Date(2024, 2, 23, 15),
+        
         image: "https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=1037&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         type: "offline",
         attendees: 99,
@@ -49,9 +50,10 @@
         distance: 75,
       },
       {
+         date: new Date(2024, 2, 14, 11),
         title: "All Nations - Manhattan Missions Church Bible Study",
         description: "Manhattan Bible Study Meetup Group",
-        date: new Date(2024, 2, 14, 11),
+       
         image: "https://plus.unsplash.com/premium_photo-1679488248784-65a638a3d3fc?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         type: "offline",
         category: "Health and Wellbeing",
@@ -59,26 +61,11 @@
       },
     ];
 
+
+
     const container = document.querySelector('.events-section');
 
-    eventsStore.forEach(event => {
-      const card = document.createElement('div');
-      card.className = 'event-card';
-      card.innerHTML = `
-        <img src="${event.image}" alt="${event.title}" class="event-image" />
-        <div class="event-content">
-          <h3>${event.title}</h3>
-          <p>${event.description}</p>
-          <p><strong>Дата:</strong> ${event.date.toLocaleString()}</p>
-          <p><strong>Тип:</strong> ${event.type}</p>
-          ${event.attendees ? `<p><strong>:</strong> ${event.attendees}</p>` : ""}
-          <p><strong>Категория:</strong> ${event.category}</p>
-          <p><strong>Расстояние:</strong> ${event.distance} км</p>
-        </div>
-      `;
-      container.appendChild(card);
-    });
-  
+
           // Скидаю фильтр  // 
 
 document.getElementById('reset-filters').addEventListener('click', () => {
@@ -98,6 +85,8 @@ document.getElementById('reset-filters').addEventListener('click', () => {
   distance: null,
 };
 
+
+
 document.querySelectorAll('.filter-btn').forEach(button => {
   button.addEventListener('click', () => {
     const filter = button.dataset.filter;
@@ -114,10 +103,6 @@ document.querySelectorAll('.filter-options input').forEach(input => {
   });
 });
 
-
-
-
-const matchDate = !filters.date || event.date.getTime() === Number(filters.date);
 
 
 function renderFilteredEvents() {
@@ -162,3 +147,4 @@ document.querySelectorAll('.filter-btn').forEach(button => {
     button.classList.toggle('active');
   });
 });
+renderFilteredEvents();
