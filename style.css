@@ -242,6 +242,13 @@ padding-right: 73px;
 }
 
 
+@media (max-width: 390px) {
+  .main {
+     display: block;
+  
+  }
+  }
+
 
                        /* VIDEO */
 
@@ -728,11 +735,11 @@ color: #00798A;
 
   }
 
-  .friendships_card{
+  
 
    
 
-  }
+ 
   .friendships_img{
     margin-bottom: 24px;
     
@@ -765,7 +772,11 @@ color: #00798A;
  
 
   }
-
+@media (max-width: 390px) {
+  .friendships_wrapper {
+     display: block;
+  
+  }
 
 
                           /* FOOTER */
