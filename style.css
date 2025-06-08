@@ -21,7 +21,7 @@ a {
 
 
 img {
-  max-width: 100%;
+ 
   height: auto;
   display: block;
 }
@@ -606,6 +606,7 @@ text-align: center;
   
 }
 .works_item{
+  
   width: 580px;
   margin-top: 24px;
   display: flex;
@@ -652,6 +653,53 @@ text-align: center;
   margin-bottom: 24px;
 color: #00798A;
 }
+
+
+@media (max-width: 390px) {
+  .works_box {
+     display: block;
+  }
+  .works_item{
+ max-width: 360px;
+  margin-top: 24px;
+  display: flex;
+  align-items: flex-start;
+  background-color: #97CAD114;
+  
+}
+.lolo{
+  margin-left: 0px;
+
+}
+  .works_img{
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+.works_tit{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 14.93px;
+  margin-bottom: 16px;
+  margin-top: 19.91px;
+
+}
+.works_paragraf{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  margin-bottom: 16px;
+}
+
+.works_link{
+  display: flex;
+    font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 24px;
+color: #00798A;
+}
+  }
 
                          /* Friendships */
     .friendships{
@@ -735,8 +783,8 @@ color: #00798A;
   display: flex;
   align-items: center;
   padding-bottom: 24px;
-  padding-top: 24px;
   justify-content: space-between;
+  padding-top: 24px;
   flex-wrap: wrap;
   gap: 12px;
 }
@@ -758,35 +806,22 @@ line-height: 24px;
 font-weight: 400;
 padding: 10px 14px;
 margin-left: 45px;
-
-
 }
-
 .footer_wrapper{
   display: flex;
-
 }
-
-
 .footer_cart{
-  
   width: 373px;
-
 }
-
-
 .footer_cart_list{
  color: #C5C4C4;
-
 }
-
 .footer_cart_list li {
   margin-bottom: 7px; 
    font-weight: 400;
   font-size: 14px;
   line-height: 20px;
 }
-
 .footer_cart_title{
   color: #F6F7F8;
   font-weight: 400;
@@ -794,9 +829,7 @@ margin-left: 45px;
   line-height: 24px;
   margin-bottom: 7px;
   margin-top: 24px;
-
 }
-
 .footer_nav_title{
   color: #F6F7F8;
   font-weight: 400;
@@ -834,9 +867,6 @@ margin-left: 45px;
 }
 
 
-
-
-
 @media (max-width: 390px) {
   .container_footer {
     padding-left: 15px;
@@ -845,7 +875,7 @@ margin-left: 45px;
 
   .footer_start {
     flex-direction: row;
-    justify-content: space-between;
+   
     align-items: center;
     flex-wrap: wrap;
     gap: 12px;
@@ -902,12 +932,12 @@ margin-left: 45px;
     flex-wrap: wrap;
     margin-top: 12px;
   }
-  @media (max-width: 390px) {
+  
    .footer_nav_app {
   
 display: none;
   
-}}
+}
 
   .footer_nav_app {
     display: none;
