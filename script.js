@@ -79,4 +79,72 @@
       container.appendChild(card);
     });
   
+          // Скидаю фильтр  // 
 
+document.getElementById('reset-filters').addEventListener('click', () => {
+  filters = {
+    date: null,
+    type: null,
+    category: null,
+    distance: null,
+  };
+  document.querySelectorAll('.filter-options input').forEach(input => input.checked = false);
+  renderFilteredEvents();
+});
+
+
+
+
+    let filters = {
+  date: null,
+  type: null,
+  category: null,
+  distance: null,
+};
+
+document.querySelectorAll('.filter-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    const filter = button.dataset.filter;
+    document.querySelectorAll('.filter-options').forEach(opt => opt.classList.remove('active'));
+    document.getElementById(`${filter}-options`).classList.toggle('active');
+  });
+});
+
+document.querySelectorAll('.filter-options input').forEach(input => {
+  input.addEventListener('change', () => {
+    const [_, key] = input.name.split('filter-');
+    filters[key] = input.value;
+    renderFilteredEvents();
+  });
+});
+
+function renderFilteredEvents() {
+  container.innerHTML = '';
+  eventsStore
+    .filter(event => {
+      const matchDate = !filters.date || event.date.toLocaleString() === filters.date;
+      const matchType = !filters.type || event.type === filters.type;
+      const matchCategory = !filters.category || event.category === filters.category;
+      const matchDistance = !filters.distance || (event.type === 'offline' && event.distance == filters.distance);
+      return matchDate && matchType && matchCategory && matchDistance;
+    })
+    .forEach(event => {
+      const card = document.createElement('div');
+      card.className = 'event-card';
+      card.innerHTML = `
+        <img src="${event.image}" alt="${event.title}" class="event-image" />
+        <div class="event-content">
+          <h3>${event.title}</h3>
+          <p>${event.description}</p>
+          <p><strong>Date:</strong> ${event.date.toLocaleString()}</p>
+          <p><strong>Type:</strong> ${event.type}</p>
+          ${event.attendees ? `<p><strong>Going:</strong> ${event.attendees}</p>` : ""}
+          <p><strong>Category:</strong> ${event.category}</p>
+          <p><strong>Distance:</strong> ${event.distance} км</p>
+        </div>
+      `;
+      container.appendChild(card);
+    });
+}
+
+renderFilteredEvents();
