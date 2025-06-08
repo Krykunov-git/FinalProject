@@ -583,6 +583,9 @@ color: #00798A;
 }
 
                          /* Friendships */
+    .friendships{
+      margin-bottom: 64px;
+    }
 
   .friendships_titl{
     margin-top: 64px;
@@ -640,6 +643,7 @@ color: #00798A;
   font-size: 16px;
   line-height: 24px;
   color: #00798A;
+ 
 
   }
 
@@ -657,6 +661,10 @@ color: #00798A;
   background-color: #212121;
 }
 .footer_start{
+  display: flex;
+  align-items: center;
+  padding-bottom: 24px;
+ 
 padding-top: 24px;
   display: flex;
   border-bottom: 1px solid#707070;
@@ -666,7 +674,22 @@ padding-top: 24px;
   font-size: 16px;
   line-height: 24px;
   color: #F6F7F8;
-  margin-bottom: 34px;
+  /* margin-bottom: 34px; */
+
+}
+.footer_button{
+ max-width: 119px;
+  max-height: 44px;
+  background-color: #212121;
+  color: #FFFFFF;
+  border: 2px solid#FFFFFF;
+border-radius: 6px;
+font-size: 16px;
+line-height: 24px;
+font-weight: 400;
+padding: 10px 14px;
+margin-left: 45px;
+
 
 }
 
