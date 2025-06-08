@@ -767,8 +767,6 @@ margin-left: 45px;
   display: flex;
  }                                       
   
-
-
  .filter-options {
   display: none;
   background: #fff;
@@ -800,9 +798,17 @@ margin-left: 45px;
 }
 .event-image {
   width: 150px;
-  height: auto;
+  max-height: 89px;
   border-radius: 8px;
 }
 .event-content h3 {
   margin: 0 0 5px;
+}
+
+.event-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #212121;
+  
 }

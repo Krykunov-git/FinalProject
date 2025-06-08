@@ -134,7 +134,7 @@ function renderFilteredEvents() {
       card.innerHTML = `
         <img src="${event.image}" alt="${event.title}" class="event-image" />
         <div class="event-content">
-          <h3>${event.title}</h3>
+          <h3 class="event-title" >${event.title}</h3>
           <p>${event.description}</p>
           <p><strong>Date:</strong> ${event.date.toLocaleString()}</p>
           <p><strong>Type:</strong> ${event.type}</p>
