@@ -154,6 +154,13 @@ body {
     border-radius: 8px;
 
 }
+
+@media (max-width: 390px) {
+  .header_input{
+   display: none;
+}
+
+  }
                       /* MAIN*/
 .main{
   display: flex;
@@ -776,6 +783,7 @@ color: #00798A;
   .friendships_wrapper {
      display: block;
   
+  }
   }
 
 
