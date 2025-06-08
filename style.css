@@ -884,12 +884,23 @@ margin-left: 45px;
 }
 
 
-.map_paragraf{}
+.map_paragraf{
+  margin-top: 81px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
 
 .map_title{
+    font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 14px;
 
 }
 
 .map{
-  
+  max-width: 350px;
+  max-height: 285px;
+
 }
