@@ -71,7 +71,7 @@
           <p>${event.description}</p>
           <p><strong>Дата:</strong> ${event.date.toLocaleString()}</p>
           <p><strong>Тип:</strong> ${event.type}</p>
-          ${event.attendees ? `<p><strong>Участников:</strong> ${event.attendees}</p>` : ""}
+          ${event.attendees ? `<p><strong>:</strong> ${event.attendees}</p>` : ""}
           <p><strong>Категория:</strong> ${event.category}</p>
           <p><strong>Расстояние:</strong> ${event.distance} км</p>
         </div>
@@ -91,10 +91,6 @@ document.getElementById('reset-filters').addEventListener('click', () => {
   document.querySelectorAll('.filter-options input').forEach(input => input.checked = false);
   renderFilteredEvents();
 });
-
-
-
-
     let filters = {
   date: null,
   type: null,
@@ -154,14 +150,7 @@ renderFilteredEvents();
 document.querySelectorAll('.filter-btn').forEach(button => {
   button.addEventListener('click', () => {
     const filter = button.dataset.filter;
-
-   
     document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-
-   
     button.classList.toggle('active');
-
-  
-    
   });
 });
