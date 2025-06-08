@@ -123,13 +123,13 @@ function renderFilteredEvents() {
       card.innerHTML = `
         <img src="${event.image}" alt="${event.title}" class="event-image" />
         <div class="event-content">
+         <p class="event-data" ><strong>Date:</strong > ${event.date.toLocaleString()}</p>
           <h3 class="event-title" >${event.title}</h3>
-          <p>${event.description}</p>
-          <p><strong>Date:</strong> ${event.date.toLocaleString()}</p>
-          <p><strong>Type:</strong> ${event.type}</p>
+           <p><strong>Distance:</strong> ${event.distance} км</p>
+           <p><strong>Type:</strong> ${event.type}</p>
           ${event.attendees ? `<p><strong>Going:</strong> ${event.attendees}</p>` : ""}
-          <p><strong>Category:</strong> ${event.category}</p>
-          <p><strong>Distance:</strong> ${event.distance} км</p>
+          
+         
         </div>
       `;
       container.appendChild(card);

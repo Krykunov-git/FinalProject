@@ -765,8 +765,38 @@ margin-left: 45px;
 
  .sorting_container{
   display: flex;
+  justify-content: space-between;
  }                                       
+.sorting_title{
+   margin-bottom: 16px;
+  margin-top: 77px;
+   font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
   
+ 
+
+}
+
+.sorting_link{
+   font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #00798A;
+  border-bottom: 4px solid #00798A;
+  margin-bottom: 16px;
+
+}
+.filters{
+  margin-bottom: 12px;
+}
+.events-section{
+  max-width: 604px;
+  
+  
+}
+
+
  .filter-options {
   display: none;
   background: #fff;
@@ -903,4 +933,10 @@ margin-left: 45px;
   max-width: 350px;
   max-height: 285px;
 
+}
+.event-data{
+  color: #7C6F50;
+   font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
 }
