@@ -121,7 +121,7 @@ function renderFilteredEvents() {
       const matchDate = !filters.date || event.date.toLocaleString() === filters.date;
       const matchType = !filters.type || event.type === filters.type;
       const matchCategory = !filters.category || event.category === filters.category;
-      const matchDistance = !filters.distance || (event.type === 'offline' && event.distance == filters.distance);
+      const matchDistance = !filters.distance || (event.distance == filters.distance);
       return matchDate && matchType && matchCategory && matchDistance;
     })
     .forEach(event => {
