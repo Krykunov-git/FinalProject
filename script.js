@@ -125,9 +125,9 @@ function renderFilteredEvents() {
         <div class="event-content">
          <p class="event-data" ><strong>Date:</strong > ${event.date.toLocaleString()}</p>
           <h3 class="event-title" >${event.title}</h3>
-           <p><strong>Distance:</strong> ${event.distance} км</p>
-           <p><strong>Type:</strong> ${event.type}</p>
-          ${event.attendees ? `<p><strong>Going:</strong> ${event.attendees}</p>` : ""}
+           <p class="event-distance" ><strong>Distance:</strong> ${event.distance} km</p>
+           
+          ${event.attendees ? `<p class="event-going" ><strong>Going:</strong> ${event.attendees}</p>` : ""}
           
          
         </div>

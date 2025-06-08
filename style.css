@@ -788,10 +788,12 @@ margin-left: 45px;
 
 }
 .filters{
-  margin-bottom: 12px;
+  margin-top: 12px;
+  margin-bottom: 30px;
 }
 .events-section{
   max-width: 604px;
+  padding-bottom: 75px;
   
   
 }
@@ -882,7 +884,7 @@ margin-left: 45px;
 
 
 .event-card {
-  border-bottom: 1px solid#D9D9D9;
+  border-top: 1px solid#D9D9D9;
   padding: 10px;
   margin: 10px 0;
   display: flex;
@@ -939,4 +941,20 @@ margin-left: 45px;
    font-size: 16px;
   font-weight: 500;
   line-height: 20px;
+  margin-bottom: 4px;
+}
+.event-distance{
+   font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #707070;
+  margin-bottom: 12px;
+
+}
+.event-going{
+   font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #707070;
+
 }
