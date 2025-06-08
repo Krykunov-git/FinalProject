@@ -674,7 +674,7 @@ padding-top: 24px;
   font-size: 16px;
   line-height: 24px;
   color: #F6F7F8;
-  /* margin-bottom: 34px; */
+ 
 
 }
 .footer_button{
@@ -759,3 +759,11 @@ margin-left: 45px;
   color: #C5C4C4;
   gap: 28px;
 }
+             
+
+                                        /* VIDEO_SORTING */
+
+ .sorting_container{
+  display: flex;
+ }                                       
+                         
