@@ -109,16 +109,24 @@ document.querySelectorAll('.filter-btn').forEach(button => {
 document.querySelectorAll('.filter-options input').forEach(input => {
   input.addEventListener('change', () => {
     const [_, key] = input.name.split('filter-');
-    filters[key] = input.value;
+    filters[key] = key === 'date' ? Number(input.value) : input.value;
     renderFilteredEvents();
   });
 });
+
+
+
+
+const matchDate = !filters.date || event.date.getTime() === Number(filters.date);
+
 
 function renderFilteredEvents() {
   container.innerHTML = '';
   eventsStore
     .filter(event => {
-      const matchDate = !filters.date || event.date.toLocaleString() === filters.date;
+     const matchDate =
+  !filters.date ||
+  (event.date.toDateString() === new Date(filters.date).toDateString());
       const matchType = !filters.type || event.type === filters.type;
       const matchCategory = !filters.category || event.category === filters.category;
       const matchDistance = !filters.distance || (event.distance == filters.distance);
