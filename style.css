@@ -473,13 +473,27 @@ margin-bottom: 35px;
     line-height:36px;
     margin-top: 65px;
     margin-bottom: 24px;
-
-  }      
+  }  
+  @media (max-width: 390px) {
+   .categories_title {
+  font-weight: 600;
+    font-size: 20px;
+    line-height:36px;
+   margin-top: 15px;
+    margin-bottom: 23px;
+  
+}}
+  
   .categories_box{
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
-  }           
+  }    
+  @media (max-width: 390px) {
+   .categories_box {
+  justify-content: center;
+  
+}}       
 
   .categories_card{
     display: flex;
