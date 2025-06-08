@@ -37,6 +37,8 @@ body {
   
 }
 
+
+
   .container {
   max-width: 1512px;
   margin: 0 auto;
@@ -44,9 +46,23 @@ body {
   padding-right: 158.34px;
   box-sizing: border-box;
 }
+@media (max-width: 390px) {
+   .container {
+  max-width: 393px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  
+}
+ 
+}
 
 
                           /* Header*/
+
+
+
 .header{
     justify-content: space-between;
     align-items: center;
