@@ -494,6 +494,14 @@ margin-bottom: 35px;
 }
 
 
+@media (max-width: 390px) {
+  .card-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+    }
+
                            /* Online events */
 
 
