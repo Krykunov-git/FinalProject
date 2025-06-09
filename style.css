@@ -880,18 +880,12 @@ text-align: center;
   display: none;
   
 }}
-
-
-
-
   .city_name{
       font-weight: 600;
   font-size:20px;
   line-height: 28px;
   color:#212121;
-
   }
-
 
                     /* WORKS */
 
@@ -899,8 +893,6 @@ text-align: center;
   margin-top: 64px;
   font-weight: 600;
   font-size: 28px;
-
-
 }
 .works_box{
   display: flex;
@@ -1499,3 +1491,24 @@ display: none;
   color: #707070;
 
 }
+
+
+@media (max-width: 390px) {
+  .sorting_title {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 36px;
+    margin-top: 22px;
+}
+.events-section {
+    width: 390px;
+    
+}
+.filters{
+  display: flex;
+  flex-wrap: wrap;
+}
+  .sorting_kill {
+display: none;
+  }
+    }
