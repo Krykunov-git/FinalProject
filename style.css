@@ -569,7 +569,6 @@ margin-bottom: 35px;
         
   }
 
-  /* Дата — .dd, яка містить .video_card_data */
   .video_card_container .dd:has(.video_card_data) {
     order: 1;
   }
@@ -584,7 +583,6 @@ margin-bottom: 35px;
     margin-bottom: 10px;
   }
 
-  /* Люди + free — .dd, яка містить .video_card_goin */
   .video_card_container .dd:has(.video_card_goin) {
     order: 4;
   }
@@ -694,18 +692,76 @@ margin-bottom: 35px;
     left: 125%;
   }
 }
+
 .join_button:hover {
   transform: scale(1.07);
-  background-color: #f03b6a; 
+  background-color: #f03b6a;
 }
 
 .join_button:hover::before {
-  filter: blur(10px); 
+  filter: blur(10px);
 }
 
-.join_img{
+.join_img {
   margin-right: 56px;
   margin-bottom: 20px;
+}
+.join_img_mobile {
+  display: none;
+}
+@media (min-width: 391px) {
+  .join_container {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
+
+@media (max-width: 390px) {
+  .join_container {
+    margin-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .join_menu {
+    width: 100%;
+    margin: 0;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    
+    
+  }
+
+  .join_img_mobile {
+    display: block;
+    margin: 16px auto;
+    max-width: 90%;
+    height: auto;
+  }
+
+  .join_img_desktop {
+    display: none;
+  }
+
+  .join_title {
+    
+    margin-top: 24px;
+   text-align: left;  
+  }
+
+  .join_paragraf {
+    font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+    padding: 0;
+  }
+
+  .join_button {
+    margin-left: 65px;
+    margin-bottom: 24px;
+  }
 }
 
 
