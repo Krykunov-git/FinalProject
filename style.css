@@ -533,7 +533,29 @@ padding-right: 73px;
 .video_bottom{
 margin-bottom: 35px;
 }
+@media (max-width: 788px) {
+  .video_title {
+    margin-top: 50px;
+    
+} 
+.card-wrapper {
+    display: flex;
+    gap: 0px;
+    justify-content: center;
+   
+}
+.video_card{
+height: auto;
+margin-bottom: 10px;
+}
 
+}
+
+@media (max-width: 430px) {
+   .card-wrapper {
+    justify-content: flex-start; 
+   
+} } 
 
 @media (max-width: 390px) {
   .card-wrapper {
