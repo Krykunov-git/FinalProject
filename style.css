@@ -528,6 +528,7 @@ margin-bottom: 35px;
   }
 
   .video_card {
+    padding-top: 9px;
     display: flex;
     width: 370px;
     height: 104px;
@@ -571,6 +572,7 @@ margin-bottom: 35px;
 
   .video_card_container .dd:has(.video_card_data) {
     order: 1;
+    
   }
 
   .video_card_title {
@@ -999,73 +1001,107 @@ color: #00798A;
   margin-bottom: 24px;
 color: #00798A;
 }
+.friendships_paragraf {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 23px;
+    color: #707070;
+   
+}
+.friendships_link {
+    font-size: 12px;
+    line-height: 23px;
+    margin-bottom: 32px;
+    
+}
   }
 
                          /* Friendships */
-    .friendships{
-      margin-bottom: 64px;
-    }
+ .friendships {
+  margin-bottom: 64px;
+}
 
-  .friendships_titl{
-    margin-top: 64px;
-     font-weight: 600;
+.friendships_titl {
+  margin-top: 64px;
+  font-weight: 600;
   font-size: 28px;
   line-height: 36px;
-  }
+}
 
-  .friendships_paragra{
-    margin-top: 16px;
-      font-weight: 400;
+.friendships_paragra {
+  margin-top: 16px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #707070;
   max-width: 893.4px;
   margin-bottom: 28px;
-  }
-  .friendships_wrapper{
-    display: flex;
-    gap: 32px;
+}
 
-  }
- 
-  .friendships_img{
-    margin-bottom: 24px;
-  }
+.friendships_wrapper {
+  display: flex;
+  gap: 32px;
+}
 
-  .friendships_title{
-     font-weight: 600;
+.friendships_img {
+  margin-bottom: 24px;
+}
+
+.friendships_title {
+  font-weight: 600;
   font-size: 16px;
   line-height: 28px;
   max-width: 292.4px;
   margin-bottom: 12px;
+}
 
-  }
-  .friendships_paragraf{
-    max-width: 365.5px;
-     font-weight: 400;
+.friendships_paragraf {
+  max-width: 365.5px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #707070;
   margin-bottom: 16px;
+}
 
-
-  }
-  .friendships_link{
-     font-weight: 400;
+.friendships_link {
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #00798A;
- 
-
-  }
-  @media (max-width: 390px) {
-   .friendships_wrapper{
-    display: block;
-    
-
-  }
-  
 }
+
+
+@media (max-width: 390px) {
+  .friendships_titl {
+    margin-top: 48px;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 27px;
+    text-align: left; 
+  }
+
+  .friendships_wrapper {
+    display: block;
+  }
+
+  .friendships_kill {
+    display: none;
+  }
+
+  .friendships_title {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 32px;
+  }
+
+  .friendships_link {
+   display: inline-block; 
+    margin-bottom: 32px;
+  }
+}
+
+
 
 
 
