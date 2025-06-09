@@ -495,12 +495,57 @@ margin-bottom: 35px;
 
 
 @media (max-width: 390px) {
-  .card-wrapper{
-  display: flex;
-  flex-wrap: wrap;
+  .card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
  
+
+  .video_stat {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 110.1px;
+  }
+
+  .video_button {
+    max-width: 160px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    font-size: 13px;
+  }
+
+  .video_title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 28px;
+    align-items: center;
+  }
+
+  .video_card {
+    display: flex;
+    width: 370px;
+    height: 104px;
+  }
+
+  .video_card img {
+    max-width: 97px;
+    max-height: 64px;
+  }
+
+   .video_card_kill {
+    display: none;
+  }
+
+  .video_link_kill {
+    display: none;
+  }
 }
-    }
 
                            /* Online events */
 
