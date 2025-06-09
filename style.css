@@ -947,6 +947,14 @@ color: #00798A;
  
 
   }
+  @media (max-width: 390px) {
+   .friendships_wrapper{
+    display: block;
+    
+
+  }
+  
+}
 
 
 
