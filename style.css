@@ -348,6 +348,22 @@ padding-right: 73px;
   background-color: #009fb3;
 }
 
+@media (max-width: 1024px) {
+  .section_main {
+    
+    margin-right: 0px;
+}
+
+  }
+
+  @media (max-width: 768px) {
+  .main_paragraf {
+    padding-right: 0px;
+    
+}
+
+  }
+
 
 @media (max-width: 390px) {
   .main {
