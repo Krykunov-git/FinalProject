@@ -1659,3 +1659,8 @@ display: none;
 display: none;
   }
     }
+
+    @media (max-width: 1276px) {
+ .sorting_kill {
+   display: none;
+}}
