@@ -75,14 +75,12 @@ body {
 }
 .header_nav{
     display: flex;
-    
     align-items: center;
     margin-top: 14px;
     
 }
 .header_logo{
     margin-left: 24px;
-    
     margin-right: 40px;
     display: block;
 }
@@ -154,7 +152,92 @@ body {
     border-radius: 8px;
 
 }
+
+@media (max-width: 390px) {
+  .header {
+    flex-direction: column;
+    padding-left: 15px;
+  padding-right: 15px;
+  }
+
+  .header_search {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 0;
+    order: 2;
+  }
+  .header_link_log {
+    width: 41.16px;
+    white-space: nowrap;
+    color: #212121;
+    font-size: 12px;
+    font-weight: 500;
+    height: 20px;
+    margin-right: 18px;
+}
+
+.header_link {
+    font-size: 12px;
+    margin-right: 18px;
+}
+
+.header_nav_log {
+   width: 17px;
+    height: 17px;
+    margin-bottom: 6px;
+}
+
+.header_nav_button {
+    width: 71.02px;
+    height: 30.76px;
+    margin-right: 0px;
+    background-color: #00798A;
+    color: #FFFFFF;
+    white-space: nowrap;
+    border: none;
+    border-radius: 8px;
+}
+
+  .search-input {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px 0 0 8px;
+  }
+
+  .header_input {
+    display: none;
+  }
+
+  .header_button {
+    width: 42px;
+    height: 42px;
+    border-radius: 0 8px 8px 0;
+  }
+
+  .header_nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    order: 1;
+    margin-left: auto;
+  }
+
+  .header_logo {
+    position: absolute;
+    left: 5px;
+    top: 12px;
+    height: 32px;
+    margin: 0;
+  }
+}
                       /* MAIN*/
+
+                      
 .main{
   display: flex;
   margin-top: 71px;
@@ -245,9 +328,55 @@ padding-right: 73px;
 @media (max-width: 390px) {
   .main {
      display: block;
+     margin-top: 30px;
   
   }
+  .section_main{
+  max-width: 352.2px;
+  margin-right: 0px;
+}
+.main_title{
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30.5px;
+  color: #212121;
+  margin-bottom: 20px;
+  text-align: center;
+  
+}
+
+.main_paragraf {
+    font-size: 12px;
+    line-height: 24px;
+    color: #212121;
+    margin-bottom: 10px;
+   padding-right: 0px;
+}
+.main_img{
+  max-width: 215px;
+  max-height: 152.5px;
+}
+.main_img-wrapper{display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+}
+
+.main_button{
+  display: flex;
+    justify-content: center; 
+  align-items: center;
+  width: 100.2px;
+  height: 35px;
+  font-size: 14px;
+  margin-top: 15px;
+  margin-left: 15px;
+
+}
+
   }
+  
 
 
                        /* VIDEO */
@@ -734,16 +863,9 @@ color: #00798A;
     gap: 32px;
 
   }
-
-  
-
-   
-
  
   .friendships_img{
     margin-bottom: 24px;
-    
-
   }
 
   .friendships_title{
@@ -772,86 +894,7 @@ color: #00798A;
  
 
   }
-@media (max-width: 390px) {
-  .header {
-    flex-direction: column;
-  }
 
-  .header_search {
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 16px;
-    gap: 0;
-    order: 2;
-  }
-  .header_link_log {
-    width: 41.16px;
-    white-space: nowrap;
-    color: #212121;
-    font-size: 12px;
-    font-weight: 500;
-    height: 20px;
-    margin-right: 18px;
-}
-
-.header_link {
-    font-size: 12px;
-    margin-right: 18px;
-}
-
-.header_nav_log {
-   width: 17px;
-    height: 17px;
-    margin-bottom: 6px;
-}
-
-.header_nav_button {
-    width: 71.02px;
-    height: 30.76px;
-    margin-right: 0px;
-    background-color: #00798A;
-    color: #FFFFFF;
-    white-space: nowrap;
-    border: none;
-    border-radius: 8px;
-}
-
-  .search-input {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 8px 0 0 8px;
-  }
-
-  .header_input {
-    display: none;
-  }
-
-  .header_button {
-    width: 42px;
-    height: 42px;
-    border-radius: 0 8px 8px 0;
-  }
-
-  .header_nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    flex: 1;
-    order: 1;
-    margin-left: auto;
-  }
-
-  .header_logo {
-    position: absolute;
-    left: 5px;
-    top: 12px;
-    height: 32px;
-    margin: 0;
-  }
-}
 
 
                           /* FOOTER */
