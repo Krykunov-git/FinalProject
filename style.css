@@ -1412,6 +1412,33 @@ display: none;
     
   }
 }
+
+   
+
+@media (max-width: 1024px) {
+  .container_footer {
+    
+    padding-left: 115.34px;
+    padding-right: 115.34px;
+   
+}
+@media (max-width: 768px) {
+  .container_footer {
+   
+    padding-left: 25.34px;
+    padding-right: 25.34px;
+   
+}
+.footer_nav_app{
+  display: none;
+}
+.footer_nav_list_kill{
+  display: none;
+}
+}
+    
+   
+}
              
 
                                         /* VIDEO_SORTING */
