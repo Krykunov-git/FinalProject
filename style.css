@@ -1057,7 +1057,16 @@ text-align: center;
   margin-bottom: 24px;
 color: #00798A;
 }
-
+@media (max-width: 1024px) {
+  .works_box {
+     display: block;
+  }
+  .lolo{
+    margin-left: 0px;
+  }
+    
+   
+}
 
 @media (max-width: 390px) {
   .works_box {
