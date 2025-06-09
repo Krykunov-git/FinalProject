@@ -152,6 +152,30 @@ body {
     border-radius: 8px;
 
 }
+@media (max-width: 1024px) {
+  .search-input {
+    width: 220px;
+   
+}
+.header_input {
+    width: 220px;
+
+    
+}}
+
+@media (max-width: 430px) {
+  .search-input {
+    width: 150px;
+    font-size: 10px;
+    
+   
+}
+.header_input {
+    width: 150px;
+    font-size: 12px;
+    
+}
+   }
 
 @media (max-width: 390px) {
   .header {
