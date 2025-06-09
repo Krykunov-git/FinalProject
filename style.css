@@ -531,12 +531,58 @@ margin-bottom: 35px;
     display: flex;
     width: 370px;
     height: 104px;
+    border-top: 0.6px solid#D9D9D9;
   }
 
   .video_card img {
     max-width: 97px;
     max-height: 64px;
   }
+  .video_card_data {
+    font-size: 14px;
+    color: #7C6F50;
+    font-weight: 500;
+    line-height: 20px;
+}
+.video_card_title {
+  padding-right: 0px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    color: #212121;
+    margin-top: 5px;
+}
+.video_card_paragraf {
+    height: auto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #707070;
+}
+
+  .video_card_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Дата — .dd, яка містить .video_card_data */
+  .video_card_container .dd:has(.video_card_data) {
+    order: 1;
+  }
+
+  .video_card_title {
+    order: 2;
+  }
+
+  .video_card_paragraf {
+    order: 3;
+  }
+
+  /* Люди + free — .dd, яка містить .video_card_goin */
+  .video_card_container .dd:has(.video_card_goin) {
+    order: 4;
+  }
+}
 
    .video_card_kill {
     display: none;
@@ -545,7 +591,10 @@ margin-bottom: 35px;
   .video_link_kill {
     display: none;
   }
-}
+  .video_img_kill{
+    display: none;
+  }
+
 
                            /* Online events */
 
