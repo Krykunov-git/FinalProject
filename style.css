@@ -588,11 +588,12 @@ margin-bottom: 35px;
   .video_card_container .dd:has(.video_card_goin) {
     order: 4;
   }
-}
-
-   .video_card_kill {
+  .video_card_kill {
     display: none;
   }
+}
+
+   
 
   .video_link_kill {
     display: none;
