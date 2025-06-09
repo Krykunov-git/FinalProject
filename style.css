@@ -154,13 +154,6 @@ body {
     border-radius: 8px;
 
 }
-
-@media (max-width: 390px) {
-  .header_input{
-   display: none;
-}
-
-  }
                       /* MAIN*/
 .main{
   display: flex;
@@ -780,11 +773,72 @@ color: #00798A;
 
   }
 @media (max-width: 390px) {
-  .friendships_wrapper {
-     display: block;
-  
+  .header {
+    flex-direction: column;
   }
+
+  .header_search {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 0;
+    order: 2;
   }
+  .header_link_log {
+    width: 41.16px;
+    white-space: nowrap;
+    margin-left: 18px;
+    color: #212121;
+    font-size: 14px;
+    font-weight: 500;
+    height: 20px;
+}
+.header_nav_button {
+    width: 71.02px;
+    height: 30.76px;
+    margin-right: 0px;
+    background-color: #00798A;
+    color: #FFFFFF;
+    white-space: nowrap;
+    border: none;
+    border-radius: 8px;
+}
+
+  .search-input {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px 0 0 8px;
+  }
+
+  .header_input {
+    display: none;
+  }
+
+  .header_button {
+    width: 42px;
+    height: 42px;
+    border-radius: 0 8px 8px 0;
+  }
+
+  .header_nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    padding-right: 16px;
+    order: 1;
+  }
+
+  .header_logo {
+    position: absolute;
+    left: 5px;
+    top: 12px;
+    height: 32px;
+    margin: 0;
+  }
+}
 
 
                           /* FOOTER */
