@@ -432,6 +432,7 @@ padding-right: 73px;
 
 .card-wrapper{
   display: flex;
+  flex-wrap: wrap;
   gap: 36px; 
 }
 
@@ -1032,6 +1033,7 @@ color: #00798A;
 }
 
 .friendships_wrapper {
+  flex-wrap: wrap;
   display: flex;
   gap: 32px;
 }
