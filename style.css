@@ -778,6 +778,7 @@ color: #00798A;
   }
 
   .header_search {
+    width: 100%;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -788,12 +789,24 @@ color: #00798A;
   .header_link_log {
     width: 41.16px;
     white-space: nowrap;
-    margin-left: 18px;
     color: #212121;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     height: 20px;
+    margin-right: 18px;
 }
+
+.header_link {
+    font-size: 12px;
+    margin-right: 18px;
+}
+
+.header_nav_log {
+   width: 17px;
+    height: 17px;
+    margin-bottom: 6px;
+}
+
 .header_nav_button {
     width: 71.02px;
     height: 30.76px;
@@ -827,8 +840,8 @@ color: #00798A;
     align-items: center;
     justify-content: flex-end;
     flex: 1;
-    padding-right: 16px;
     order: 1;
+    margin-left: auto;
   }
 
   .header_logo {
