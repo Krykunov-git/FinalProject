@@ -176,7 +176,7 @@ body {
    
 }
 .header_input {
-    width: 220px;
+    display: none;
 
     
 }}
@@ -368,6 +368,10 @@ padding-right: 73px;
     padding-right: 0px;
     
 }
+.main_img{
+  max-width: 215px;
+  max-height: 152.5px;
+}
 
   }
 
@@ -489,7 +493,7 @@ padding-right: 73px;
 }
 
 .video_card_title{
-
+margin-bottom: 8px;
   padding-right: 40px;
   font-size: 20px;
   font-weight: 600;
