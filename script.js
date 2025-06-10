@@ -69,13 +69,24 @@
           // Скидаю фильтр  // 
 
 document.getElementById('reset-filters').addEventListener('click', () => {
+  // Скидаємо значення фільтрів
   filters = {
     date: null,
     type: null,
     category: null,
     distance: null,
   };
+
+  // Знімаємо позначки з усіх інпутів
   document.querySelectorAll('.filter-options input').forEach(input => input.checked = false);
+
+  // Закриваємо всі фільтр-меню
+  document.querySelectorAll('.filter-options').forEach(opt => opt.classList.remove('active'));
+
+  // Знімаємо клас active з кнопок
+  document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+
+  // Ререндеримо картки
   renderFilteredEvents();
 });
     let filters = {
