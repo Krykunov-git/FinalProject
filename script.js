@@ -90,8 +90,21 @@ document.getElementById('reset-filters').addEventListener('click', () => {
 document.querySelectorAll('.filter-btn').forEach(button => {
   button.addEventListener('click', () => {
     const filter = button.dataset.filter;
-    document.querySelectorAll('.filter-options').forEach(opt => opt.classList.remove('active'));
-    document.getElementById(`${filter}-options`).classList.toggle('active');
+   const options = document.getElementById(`${filter}-options`);
+    const isActive = options.classList.contains('active');
+     document.querySelectorAll('.filter-options').forEach(opt => opt.classList.remove('active'));
+    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+    if (!isActive) {
+      options.classList.add('active');
+      button.classList.add('active');
+    }
+     filters = {
+      date: null,
+      type: null,
+      category: null,
+      distance: null,
+    };
+    document.querySelectorAll('.filter-options input').forEach(input => input.checked = false);
   });
 });
 
