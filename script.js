@@ -60,7 +60,20 @@
         distance: 15,
       },
     ];
+document.addEventListener("DOMContentLoaded", () => {
+  const faders = document.querySelectorAll(".fade-in");
 
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  faders.forEach(fader => observer.observe(fader));
+});
 
 
     const container = document.querySelector('.events-section');
@@ -69,7 +82,6 @@
           // Скидаю фильтр  // 
 
 document.getElementById('reset-filters').addEventListener('click', () => {
-  // Скидаємо значення фільтрів
   filters = {
     date: null,
     type: null,
@@ -77,16 +89,15 @@ document.getElementById('reset-filters').addEventListener('click', () => {
     distance: null,
   };
 
-  // Знімаємо позначки з усіх інпутів
+
   document.querySelectorAll('.filter-options input').forEach(input => input.checked = false);
 
-  // Закриваємо всі фільтр-меню
+
   document.querySelectorAll('.filter-options').forEach(opt => opt.classList.remove('active'));
 
-  // Знімаємо клас active з кнопок
+
   document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
 
-  // Ререндеримо картки
   renderFilteredEvents();
 });
     let filters = {
@@ -172,3 +183,5 @@ document.querySelectorAll('.filter-btn').forEach(button => {
   });
 });
 renderFilteredEvents();
+
+
