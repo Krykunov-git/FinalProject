@@ -60,6 +60,9 @@
         distance: 15,
       },
     ];
+
+                 // Ефект верстки с библиотеки // 
+
 document.addEventListener("DOMContentLoaded", () => {
   const faders = document.querySelectorAll(".fade-in");
 
